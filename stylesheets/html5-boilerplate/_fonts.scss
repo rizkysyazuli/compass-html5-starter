@@ -29,11 +29,6 @@ $base-line-height: 1.231 !default;
   pre, code, kbd, samp { font-family: monospace, sans-serif; }
 }
 
-// maxvoltar.com/archive/-webkit-font-smoothing
-@mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-}
-
 // Sets the font size specified in pixels using percents so that the base
 // font size changes and 1em has the correct value. When nesting font size
 // declarations, within the DOM tree, the base_font_size must be the parent's
