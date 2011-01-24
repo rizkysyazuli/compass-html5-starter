@@ -4,21 +4,41 @@
 // Then we'll import the compass extension
 @import "html5-boilerplate";
 
-// Now you can choose to include the whole
-// enchilada by uncommeting this line
-//@include html5-boilerplate;
+/*
+  HTML5 ✰ Boilerplate
 
-// Or, you can pick and choose only the
-// sections you want to include
-//@include html5-boilerplate-reset;
-//@include html5-boilerplate-fonts;
-//@include html5-boilerplate-styles;
-//@include html5-boilerplate-helpers;
-//@include html5-boilerplate-media;
+  style.css contains a reset, font normalization and some base styles.
 
-// Or else, you can import this partial if you
-// want more controll over which mixins to use
-@import "partials/example";
+  credit is left where credit is due.
+  much inspiration was taken from these projects:
+    yui.yahooapis.com/2.8.1/build/base/base.css
+    camendesign.com/design/
+    praegnanz.de/weblog/htmlcssjs-kickstart
+*/
 
-// Finally, put your own styles in this partial
-@import "partials/page";
+@include html5-boilerplate-reset;
+@include html5-boilerplate-fonts;
+@include html5-boilerplate-styles;
+
+
+/* Primary Styles
+   Author:
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include html5-boilerplate-helpers;
+@include html5-boilerplate-media;
