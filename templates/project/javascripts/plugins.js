@@ -1,12 +1,3 @@
-/**
- * [Project Name] Plugins
- *
- * @author      Your Name <your@email.com>
- * @version     x.x
- * @see         http://www.theurl.com/
- * @copyright   Copyright (c) 2010, Your Company
- *
- **/
 
 // usage: log('inside coolFunc', this, arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
