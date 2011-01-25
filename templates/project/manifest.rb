@@ -21,13 +21,14 @@ if Compass.configuration.project_type == :rails
   javascript 'javascripts/rails.js', :to => 'rails.js'
 else
   html 'index.html.haml'
-  javascript 'javascripts/mylibs/gitignore.txt', :to => 'mylibs/.gitignore'
   javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
   javascript 'javascripts/libs/jquery-1.4.4.js', :to => 'libs/jquery-1.4.4.js'
   javascript 'javascripts/libs/jquery-1.4.4.min.js', :to => 'libs/jquery-1.4.4.min.js'
   javascript 'javascripts/libs/modernizr-1.6.min.js', :to => 'libs/modernizr-1.6.min.js'
   javascript 'javascripts/plugins.js', :to => 'plugins.js'
   javascript 'javascripts/script.js', :to => 'script.js'
+  # placeholder file for empty "mylibs" folder
+  javascript 'gitignore.txt', :to => 'mylibs/.gitignore'
 end
 html 'files/404.html', :to => '404.html'
 html 'files/htaccess', :to => '.htaccess'
@@ -35,6 +36,8 @@ html 'files/crossdomain.xml', :to => 'crossdomain.xml'
 html 'files/robots.txt', :to => 'robots.txt'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
+# placeholder file for empty "img" folder
+image 'gitignore.txt', :to => '.gitignore'
 
 # html5-boilerplate build script
 file 'files/build/build.xml', :to => 'build/build.xml'
