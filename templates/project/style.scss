@@ -41,4 +41,30 @@
 
 
 @include html5-boilerplate-helpers;
-@include html5-boilerplate-media;
+
+/*
+ * media queries for responsive design
+ * these follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+
+  /* uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+@include html5-boilerplate-print;

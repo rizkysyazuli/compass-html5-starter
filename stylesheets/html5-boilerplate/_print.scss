@@ -1,31 +1,4 @@
-@mixin html5-boilerplate-media {
-  /*
-   * media queries for responsive design
-   * these follow after primary styles so they will successfully override.
-   */
-  
-  @media all and (orientation:portrait) {
-    /* style adjustments for portrait mode goes here */
-    
-    @include media-orientation-portrait;
-  }
-
-  @media all and (orientation:landscape) {
-    /* style adjustments for landscape mode goes here */
-    
-    @include media-orientation-landscape;
-  }
-
-  /* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-     consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-  @media screen and (max-device-width: 480px) {
-    @include media-mobile;
-    
-    /* uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
-       j.mp/textsizeadjust
-    html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-  }
-  
+@mixin html5-boilerplate-print {
   /*
    * print styles
    * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
@@ -45,9 +18,3 @@
     h2, h3{ page-break-after: avoid; }
   }
 }
-
-@mixin media-orientation-portrait { }
-
-@mixin media-orientation-landscape { }
-
-@mixin media-mobile { }
