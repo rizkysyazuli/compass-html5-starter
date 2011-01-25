@@ -21,9 +21,10 @@ if Compass.configuration.project_type == :rails
   javascript 'javascripts/rails.js', :to => 'rails.js'
 else
   html 'index.html.haml'
-  javascript 'javascripts/dd_belatedpng.js', :to => 'dd_belatedpng.js'
-  javascript 'javascripts/jquery-1.4.4.min.js', :to => 'jquery-1.4.4.min.js'
-  javascript 'javascripts/modernizr-1.6.min.js', :to => 'modernizr-1.6.min.js'
+  javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
+  javascript 'javascripts/libs/jquery-1.4.4.js', :to => 'libs/jquery-1.4.4.js'
+  javascript 'javascripts/libs/jquery-1.4.4.min.js', :to => 'libs/jquery-1.4.4.min.js'
+  javascript 'javascripts/libs/modernizr-1.6.min.js', :to => 'libs/modernizr-1.6.min.js'
   javascript 'javascripts/plugins.js', :to => 'plugins.js'
   javascript 'javascripts/script.js', :to => 'script.js'
 end
