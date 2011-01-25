@@ -75,7 +75,6 @@ $list-left-margin: 2em !default;
   button, input, select, textarea { margin: 0; }
 
   /* colors for form validity */
-  input:valid, textarea:valid   {  }
   input:invalid, textarea:invalid {
     @include border-radius(1px);
     @include box-shadow(red, 0, 0, 5px, 0);
