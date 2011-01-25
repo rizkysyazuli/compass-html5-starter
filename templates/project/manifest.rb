@@ -1,6 +1,6 @@
 description "Compass extention for HTML5 Boilerplate located at http://html5boilerplate.com"
 
-stylesheet 'style.scss', :media => 'all'
+stylesheet 'style.scss'
 stylesheet 'handheld.scss', :media => 'handheld'
 stylesheet 'partials/_base.scss'
 
@@ -20,7 +20,7 @@ if Compass.configuration.project_type == :rails
   javascript 'javascripts/plugins.js', :to => 'plugins.js'
   javascript 'javascripts/rails.js', :to => 'rails.js'
 else
-  html 'index.html.haml'
+  html 'index.html'
   javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
   javascript 'javascripts/libs/jquery-1.4.4.js', :to => 'libs/jquery-1.4.4.js'
   javascript 'javascripts/libs/jquery-1.4.4.min.js', :to => 'libs/jquery-1.4.4.min.js'
