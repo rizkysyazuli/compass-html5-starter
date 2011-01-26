@@ -87,16 +87,10 @@ help %Q{
 This is a Compass extention for HTML5 Boilerplate by Paul Irish
 (See full docs at: http://github.com/sporkd/compass-html5-boilerplate)
 
-Rails Installation
-========================
-$ gem install html5-boilerplate
-$ cd my_rails_project
-$ compass init rails -r html5-boilerplate -u html5-boilerplate --force
-
 Stand Alone Installation
 ========================
 $ gem install html5-boilerplate
-$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir js --css-dir css
+$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img
 
 }
 
