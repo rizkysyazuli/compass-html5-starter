@@ -3,14 +3,7 @@ $base-font-size: 13px !default;
 $base-line-height: 1.231 !default;
 
 @mixin html5-boilerplate-fonts($family: $base-font-family, $size: $base-font-size, $line-height: $base-line-height) {
-  /* fonts.css from the YUI Library: developer.yahoo.com/yui/
-     refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
-
-    there are three custom edits:
-     * remove arial, helvetica from explicit font stack
-     * we normalize monospace styles ourselves
-     * table font-size is reset in the HTML5 reset above so there is no need to repeat
-  */
+  /* font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/ */
   body { 
     font-size: $size;
     font-family: $family;
@@ -18,12 +11,10 @@ $base-line-height: 1.231 !default;
     /* hack retained to preserve specificity */
     *font-size: small;
   }
-
   select, input, textarea, button { font: 99% $family; }
 
   /* normalize monospace sizing
-   * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
-   */
+   * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
   pre, code, kbd, samp { font-family: monospace, sans-serif; }
 }
 

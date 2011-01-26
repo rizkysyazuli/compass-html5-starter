@@ -21,8 +21,7 @@ $list-left-margin: 2em !default;
     font-family: $base-font-family;
   }
 
-  /* headers (h1,h2,etc) have no default font-size or margin,
-     you'll want to define those yourself. */
+  /* headers (h1,h2,etc) have no default font-size or margin. define those yourself. */
   h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
   /* always force a scrollbar in non-IE: */
@@ -47,7 +46,7 @@ $list-left-margin: 2em !default;
 
   td { vertical-align: top; }
 
-  /* set sub, sup without affecting line-height: gist.github.com/413930*/
+  /* set sub, sup without affecting line-height: gist.github.com/413930 */
   sub, sup { font-size: 75%; line-height: 0; position: relative; }
   sup { top: -0.5em; }
   sub { bottom: -0.25em; }
@@ -79,8 +78,7 @@ $list-left-margin: 2em !default;
     @include border-radius(1px);
     @include box-shadow(red, 0, 0, 5px, 0);
   }
-  .no-boxshadow input:invalid,
-  .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+  .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
   /* These selection declarations have to be separate.

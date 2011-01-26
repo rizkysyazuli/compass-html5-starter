@@ -33,7 +33,8 @@ end
 html 'files/404.html', :to => '404.html'
 html 'files/htaccess', :to => '.htaccess'
 html 'files/crossdomain.xml', :to => 'crossdomain.xml'
-html 'files/robots.txt', :to => 'robots.txt'
+file 'files/robots.txt', :to => 'robots.txt'
+file 'files/humans.txt', :to => 'humans.txt'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
 # placeholder file for empty "img" folder
@@ -56,7 +57,6 @@ file 'files/build/tools/css-compressor/changelog.txt', :to => 'build/tools/css-c
 file 'files/build/tools/css-compressor/cli.php', :to => 'build/tools/css-compressor/cli.php'
 file 'files/build/tools/css-compressor/CSSCompression.php', :to => 'build/tools/css-compressor/CSSCompression.php'
 file 'files/build/tools/css-compressor/license.txt', :to => 'build/tools/css-compressor/license.txt'
-file 'files/build/tools/css-compressor/omg.css', :to => 'build/tools/css-compressor/omg.css'
 file 'files/build/tools/css-compressor/helpers/hex2short-colors.json', :to => 'build/tools/css-compressor/helpers/hex2short-colors.json'
 file 'files/build/tools/css-compressor/helpers/hex2short-safe.json', :to => 'build/tools/css-compressor/helpers/hex2short-safe.json'
 file 'files/build/tools/css-compressor/helpers/long2hex-colors.json', :to => 'build/tools/css-compressor/helpers/long2hex-colors.json'
