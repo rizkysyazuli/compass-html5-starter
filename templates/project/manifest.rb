@@ -28,7 +28,7 @@ else
   javascript 'javascripts/plugins.js', :to => 'plugins.js'
   javascript 'javascripts/script.js', :to => 'script.js'
   # placeholder file for empty "mylibs" folder
-  javascript 'gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
+  javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
 end
 html 'files/404.html', :to => '404.html'
 html 'files/htaccess', :to => '.htaccess'
@@ -37,9 +37,9 @@ file 'files/robots.txt', :to => 'robots.txt'
 file 'files/humans.txt', :to => 'humans.txt'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
-file 'gitignore.txt', :to => '.gitignore'
+file 'files/gitignore.txt', :to => '.gitignore'
 # placeholder file for empty "img" folder
-image 'gitignore_placeholder.txt', :to => '.gitignore'
+image 'files/gitignore_placeholder.txt', :to => '.gitignore'
 
 # html5-boilerplate build script
 file 'files/build/build.xml', :to => 'build/build.xml'
