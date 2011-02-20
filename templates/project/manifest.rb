@@ -4,32 +4,15 @@ stylesheet 'style.scss'
 stylesheet 'handheld.scss', :media => 'handheld'
 stylesheet 'partials/_base.scss'
 
-if Compass.configuration.project_type == :rails
-  file 'application.html.haml', :to => 'app/views/layouts/application.html.haml'
-  file '_flashes.html.haml', :to => 'app/views/layouts/_flashes.html.haml'
-  file '_footer.html.haml', :to => 'app/views/layouts/_footer.html.haml'
-  file '_head.html.haml', :to => 'app/views/layouts/_head.html.haml'
-  file '_header.html.haml', :to => 'app/views/layouts/_header.html.haml'
-  file '_javascripts.html.haml', :to => 'app/views/layouts/_javascripts.html.haml'
-  file '_stylesheets.html.haml', :to => 'app/views/layouts/_stylesheets.html.haml'
-  file 'files/google.yml', :to => 'config/google.yml'
-  file 'files/nginx.conf', :to => 'config/nginx.conf'
-  javascript 'javascripts/dd_belatedpng.js', :to => 'dd_belatedpng.js'
-  javascript 'javascripts/jquery-1.4.4.min.js', :to => 'jquery-1.4.4.min.js'
-  javascript 'javascripts/modernizr-1.6.min.js', :to => 'modernizr-1.6.min.js'
-  javascript 'javascripts/plugins.js', :to => 'plugins.js'
-  javascript 'javascripts/rails.js', :to => 'rails.js'
-else
-  html 'index.html'
-  javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
-  javascript 'javascripts/libs/jquery-1.4.4.js', :to => 'libs/jquery-1.4.4.js'
-  javascript 'javascripts/libs/jquery-1.4.4.min.js', :to => 'libs/jquery-1.4.4.min.js'
-  javascript 'javascripts/libs/modernizr-1.6.min.js', :to => 'libs/modernizr-1.6.min.js'
-  javascript 'javascripts/plugins.js', :to => 'plugins.js'
-  javascript 'javascripts/script.js', :to => 'script.js'
-  # placeholder file for empty "mylibs" folder
-  javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
-end
+html 'index.html'
+javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
+javascript 'javascripts/libs/jquery-1.4.4.js', :to => 'libs/jquery-1.4.4.js'
+javascript 'javascripts/libs/jquery-1.4.4.min.js', :to => 'libs/jquery-1.4.4.min.js'
+javascript 'javascripts/libs/modernizr-1.6.min.js', :to => 'libs/modernizr-1.6.min.js'
+javascript 'javascripts/plugins.js', :to => 'plugins.js'
+javascript 'javascripts/script.js', :to => 'script.js'
+# placeholder file for empty "mylibs" folder
+javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
 html 'files/404.html', :to => '404.html'
 html 'files/htaccess', :to => '.htaccess'
 html 'files/crossdomain.xml', :to => 'crossdomain.xml'
@@ -88,7 +71,7 @@ help %Q{
 This is a Compass extention for HTML5 Boilerplate by Paul Irish
 (See full docs at: http://github.com/sporkd/compass-html5-boilerplate)
 
-Stand Alone Installation
+Installation
 ========================
 $ gem install html5-boilerplate
 $ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/css/src
