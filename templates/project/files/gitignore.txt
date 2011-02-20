@@ -16,10 +16,16 @@
 .settings
 nbproject
 thumbs.db
+*.tmproj
+*.kpf
 
 # Dreamweaver added files
 _notes
 dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
 
 # Folders to ignore
 .hg
