@@ -20,6 +20,23 @@
 @include html5-boilerplate-fonts;
 @include html5-boilerplate-styles;
 
+/**
+ * You might tweak these..
+ */
+
+body, select, input, textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: $font-color;
+  /* Set your base font here, to apply evenly */
+  /* font-family: Georgia, serif;  */
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+a, a:active, a:visited { color: $link-color; }
+a:hover { color: $link-hover-color; }
+
 
 /**
  * Primary styles.
