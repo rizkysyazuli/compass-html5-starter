@@ -54,7 +54,7 @@ This is a Compass extention for HTML5 Boilerplate by Paul Irish
 Installation
 ========================
 $ gem install html5-boilerplate
-$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/css/src
+$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
 
 }
 
