@@ -22,12 +22,12 @@ file 'files/humans.txt', :to => 'humans.txt'
 file 'files/gitignore.txt', :to => '.gitignore'
 
 # default images
-image 'images/h/apple-touch-icon.png',              :to => 'h/apple-touch-icon.png'
-image 'images/h/splash.png',                        :to => 'h/splash.png'
-image 'images/l/apple-touch-icon-precomposed.png',  :to => 'l/apple-touch-icon-precomposed.png'
-image 'images/l/apple-touch-icon.png',              :to => 'l/apple-touch-icon.png'
-image 'images/l/splash.png',                        :to => 'l/splash.png'
-image 'images/m/apple-touch-icon.png',              :to => 'm/apple-touch-icon.png'
+image 'images/h/apple-touch-icon.png', :to => 'h/apple-touch-icon.png'
+image 'images/h/splash.png', :to => 'h/splash.png'
+image 'images/l/apple-touch-icon-precomposed.png', :to => 'l/apple-touch-icon-precomposed.png'
+image 'images/l/apple-touch-icon.png', :to => 'l/apple-touch-icon.png'
+image 'images/l/splash.png', :to => 'l/splash.png'
+image 'images/m/apple-touch-icon.png', :to => 'm/apple-touch-icon.png'
 
 # build script
 file 'files/build/build.xml', :to => 'build/build.xml'
