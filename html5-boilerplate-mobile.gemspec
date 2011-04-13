@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.1.0b"
+  s.version = "0.1.2b"
   s.date = "2011-04-13"
 
   s.name = "html5-starter-mobile"
