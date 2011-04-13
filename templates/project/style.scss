@@ -16,9 +16,9 @@
  * - praegnanz.de/weblog/htmlcssjs-kickstart
  */
 
-@include html5-boilerplate-reset;
-@include html5-boilerplate-fonts;
-@include html5-boilerplate-styles;
+@include html5-boilerplate-mobile-reset;
+@include html5-boilerplate-mobile-fonts;
+@include html5-boilerplate-mobile-styles;
 
 /**
  * You might tweak these..
@@ -59,7 +59,7 @@ a:hover { color: $link-hover-color; }
 
 
 
-@include html5-boilerplate-helpers;
+@include html5-boilerplate-mobile-helpers;
 
 /**
  * Media queries for responsive design.
