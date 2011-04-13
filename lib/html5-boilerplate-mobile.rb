@@ -1,0 +1,1 @@
+Compass::Frameworks.register("html5-boilerplate-mobile", :path => "#{File.dirname(__FILE__)}/..")

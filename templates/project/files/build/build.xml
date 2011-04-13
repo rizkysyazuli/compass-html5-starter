@@ -18,7 +18,7 @@
     <property file="build/config/default.properties"/>
 
     <!-- merge the stylesheet properties -->
-    <var name="stylesheet-files" value="${file.stylesheets}, ${file.default.stylesheets}"/>
+    <var name="stylesheet-files" value="${file.default.stylesheets}, ${file.stylesheets}"/>
     
     <!-- merge the pages properties -->
     <var name="page-files" value="${file.pages}, ${file.pages.default.include}"/>
@@ -56,7 +56,7 @@
     </if>
     </target>
 
-
+  
     <target name="text">
     <if>
         <equals arg1="${env}" arg2="dev"/>
@@ -85,7 +85,7 @@
     <antcall target="-jpgcopy"/>
     </target>
 
-
+  
     <target name="buildkit">
     <if>
         <equals arg1="${env}" arg2="dev"/>
@@ -111,8 +111,8 @@
         </else>
     </if>
     </target>
-
-
+    
+    
     <target name="build">
     <if>
         <equals arg1="${env}" arg2="dev"/>
@@ -139,7 +139,7 @@
     </if>
     </target>
 
-
+    
     <target name="minify">
     <if>
         <equals arg1="${env}" arg2="dev"/>
@@ -224,7 +224,8 @@
                      -js.delete,
                      -css,
                      -html,
-                     -htmlclean"/>
+                     -htmlclean,
+					 -manifest"/>
 
     <target name="-text.production"
             depends="-rev,
@@ -239,7 +240,8 @@
                      -strip-console.log,
                      -css,
                      -html,
-                     -htmlclean"/>
+                     -htmlclean,
+					 -manifest"/>
 
     <!-- Target: buildkit -->
     <target name="-buildkit.dev"
@@ -263,7 +265,8 @@
                      -html,
                      -htmlbuildkit,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-buildkit.production"
             depends="-rev,
@@ -280,7 +283,8 @@
                      -html,
                      -htmlbuildkit,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <!-- Target: build -->
     <target name="-build.dev"
@@ -304,7 +308,8 @@
                      -html,
                      -htmlclean,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-build.production"
             depends="-rev,
@@ -321,7 +326,8 @@
                      -html,
                      -htmlclean,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <!-- Target: minify -->
     <target name="-minify.dev"
@@ -345,7 +351,8 @@
                      -html,
                      -htmlcompress,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-minify.production"
             depends="-rev,
@@ -362,7 +369,8 @@
                      -html,
                      -htmlcompress,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <!--
     *************************************************
@@ -670,14 +678,17 @@
 
     <target name="-serverconfig" description="(PRIVATE) Upgrades expires headers">
         <echo message="Upgrading expires header timeouts for js/css to 1yr..."/>
-        <if>
-            <available file="./${dir.publish}/${file.serverconfig}"/>
-            <then>
-                <replace file="./${dir.publish}/${file.serverconfig}" token="access plus 2 months" value="access plus 1 year"/>
-            </then>
-        </if>
+        <replace file="./${dir.publish}/${file.serverconfig}" token="access plus 2 months" value="access plus 1 year"/>
     </target>
 
+	
+	<target name="-manifest">
+		<replace>
+			<replacefilter token="default.appcache" value="default-${build.number}.appcache" />
+			<fileset dir="./${dir.publish}/" includes="${page-files}"/>
+		</replace>
+		<move file="./${dir.publish}/default.appcache" tofile="./${dir.publish}/default-${build.number}.appcache"/>
+	</target>
     
     <!-- CSS -->
     <target name="-css" depends="-load-build-info" description="Concatenates and Minifies any stylesheets listed in the file.stylesheets property">

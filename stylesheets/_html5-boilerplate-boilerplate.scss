@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+@import "html5-boilerplate-mobile/reset";
+@import "html5-boilerplate-mobile/fonts";
+@import "html5-boilerplate-mobile/styles";
+@import "html5-boilerplate-mobile/helpers";
+
+@mixin html5-boilerplate-mobile {
+  @include html5-boilerplate-mobile-reset;
+  @include html5-boilerplate-mobile-fonts;
+  @include html5-boilerplate-mobile-styles;
+  @include html5-boilerplate-mobile-helpers;
+}
