@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.version = "0.1.2b"
   s.date = "2011-04-13"
 
-  s.name = "html5-starter-mobile"
+  s.name = "html5-boilerplate-mobile"
   s.authors = ["Rizky Syazuli"]
   s.summary = %q{A Compass extension based on Shi Chuan's Mobile HTML5 Boilerplate}
   s.description = %q{A Compass extension based on Shi Chuan's Mobile HTML5 Boilerplate at http://html5boilerplate.com/mobile/}
