@@ -10,7 +10,6 @@ javascript 'javascripts/libs/jquery-1.5.2.min.js', :to => 'libs/jquery-1.5.2.min
 javascript 'javascripts/libs/modernizr-custom.js', :to => 'libs/modernizr-custom.js'
 javascript 'javascripts/libs/respond.min.js', :to => 'libs/respond.min.js'
 javascript 'javascripts/mylibs/helper.js', :to => 'mylibs/helper.js'
-javascript 'javascripts/plugins.js', :to => 'plugins.js'
 javascript 'javascripts/script.js', :to => 'script.js'
 
 html 'files/404.html', :to => '404.html'
