@@ -13,8 +13,8 @@ $list-left-margin: 2em !default;
    * Minimal base styles.
    */
 
-  /* Always force a scrollbar in non-IE */
-  html { overflow-y: scroll; }
+  /* Prevent mobile zooming while remain desktop zooming: github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 */
+  html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
 
   /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
   a:hover, a:active { outline: none; }
@@ -43,13 +43,12 @@ $list-left-margin: 2em !default;
 
   textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
 
-  .ie6 legend, .ie7 legend { margin-left: -7px; } 
+  .iem7 legend { margin-left: -7px; }
 
   /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
   input[type="radio"] { vertical-align: text-bottom; }
   input[type="checkbox"] { vertical-align: bottom; }
-  .ie7 input[type="checkbox"] { vertical-align: baseline; }
-  .ie6 input { vertical-align: text-bottom; }
+  .iem7 input[type="checkbox"] { vertical-align: baseline; }
 
   /* Hand cursor on clickable input elements */
   label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
@@ -68,11 +67,11 @@ $list-left-margin: 2em !default;
   /* These selection declarations have to be separate
      No text-shadow: twitter.com/miketaylr/status/12228805301
      Also: hot pink! */
-  ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-  ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+  ::-moz-selection{ background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
+  ::selection { background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
 
   /* j.mp/webkit-tap-highlight-color */
-  a:link { -webkit-tap-highlight-color: #FF5E99; }
+  a:link { -webkit-tap-highlight-color: $selected-background-color; }
 
   /* Make buttons play nice in IE:
      www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -80,5 +79,5 @@ $list-left-margin: 2em !default;
 
   /* Bicubic resizing for non-native sized IMG:
      code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-  .ie7 img { -ms-interpolation-mode: bicubic; }
+  .iem7 img { -ms-interpolation-mode: bicubic; }
 }
