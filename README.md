@@ -16,9 +16,9 @@ Installation
 Starting a project
 ------------------
 
-    compass create my_project -r html5-boilerplate-mobile -u html5-boilerplate-mobile --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
+    compass create my_project -r html5-boilerplate-mobile -u html5-boilerplate-mobile --javascripts-dir js --css-dir css --images-dir img
 
-The `--javascripts-dir`, `--css-dir`, `--images-dir` and `--sass-dir` flags are required to keep consistent with the original Mobile HTML5 Boilerplate project layout. If you omit them, be sure to edit your javascript and style tags accordingly in `index.html`.
+The `--javascripts-dir`, `--css-dir` and `--images-dir` flags are required to keep consistent with the original Mobile HTML5 Boilerplate project layout. If you omit them, be sure to edit your javascript and style tags accordingly in `index.html`.
 
 Run `compass watch my_project` and the SCSS files will automatically get compiled to your Sass compilation directory whenever a change is made:
 

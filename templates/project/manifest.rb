@@ -52,7 +52,7 @@ This is a Compass extention for Mobile HTML5 Boilerplate by Shi Chuan
 Installation
 ========================
 $ gem install html5-starter-mobile
-$ compass create my_project -r html5-boilerplate-mobile -u html5-boilerplate-mobile --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
+$ compass create my_project -r html5-boilerplate-mobile -u html5-boilerplate-mobile --javascripts-dir js --css-dir css --images-dir img
 
 }
 
