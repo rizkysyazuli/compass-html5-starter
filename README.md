@@ -1,7 +1,7 @@
 Compass HTML5 Starter
 =========================
 
-HTML5 Starter is a Compass extension based on [HTML5 Starter](https://github.com/rizkysyazuli/html5-starter), a fork of [HTML5 Boilerplate](https://github.com/paulirish/html5-boilerplate) by Paul Irish.
+HTML5 Starter is a Compass extension based on [HTML5 Boilerplate](https://github.com/paulirish/html5-boilerplate) by Paul Irish.
 You can use it to kick-start a fully compliant HTML5 applications. Generating a set of starter files for your HTML5 projects with integrated Sass (Scss) templates.
 
 Browse [html5boilerplate.com](http://html5boilerplate.com) for the full workup.
