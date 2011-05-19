@@ -10,7 +10,7 @@ Browse [html5boilerplate.com/mobile/](http://html5boilerplate.com/mobile/) for t
 Installation
 ============
 
-    gem install html5-starter-mobile
+    gem install html5-starter-mobile --pre
 
 
 Starting a project
