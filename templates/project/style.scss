@@ -4,42 +4,25 @@
 // Then we'll import the compass extension
 @import "html5-boilerplate";
 
-/**
+/* ==|== normalize ==========================================================
+ * 
  * HTML5 ✰ Boilerplate
  *
- * style.css contains a reset, font normalization and some base styles.
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
  *
- * Credit is left where credit is due.
- * Much inspiration was taken from these projects:
- * - yui.yahooapis.com/2.8.1/build/base/base.css
- * - camendesign.com/design/
- * - praegnanz.de/weblog/htmlcssjs-kickstart
+ * Detailed information about this CSS: h5bp.com/css
  */
 
-@include html5-boilerplate-reset;
-@include html5-boilerplate-fonts;
-@include html5-boilerplate-styles;
-
-/**
- * You might tweak these..
- */
-
-body, select, input, textarea {
-  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  color: $font-color;
-  /* Set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */
-}
-
-/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+@include html5-boilerplate-normalize;
 
 
-/**
- * Primary styles.
- *
- * Author: 
- */
+
+/* ==|== primary styles =====================================================
+   
+   Author: 
+   ========================================================================== */
 
 
 
@@ -55,33 +38,37 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 
 
+
+/* ==|== non-semantic helper classes ========================================
+   
+   Please define your styles before this section.
+   ========================================================================== */
 
 @include html5-boilerplate-helpers;
 
-/**
- * Media queries for responsive design.
- *
- * These follow after primary styles so they will successfully override.
- */
 
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here. */
 
-}
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
 
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here. */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
 
 }
 
-/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
 
-
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you:
-     j.mp/textsizeadjust */
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
 
 @include html5-boilerplate-print;
