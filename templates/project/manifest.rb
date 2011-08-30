@@ -1,15 +1,13 @@
 description "Compass extention for HTML5 Boilerplate located at http://html5boilerplate.com"
 
 stylesheet 'style.scss'
-stylesheet 'handheld.scss', :media => 'handheld'
 stylesheet 'partials/_boilerplate-defaults.scss'
 
 html 'index.html'
 
-javascript 'javascripts/libs/dd_belatedpng.js', :to => 'libs/dd_belatedpng.js'
-javascript 'javascripts/libs/jquery-1.5.2.js', :to => 'libs/jquery-1.5.2.js'
-javascript 'javascripts/libs/jquery-1.5.2.min.js', :to => 'libs/jquery-1.5.2.min.js'
-javascript 'javascripts/libs/modernizr-1.7.min.js', :to => 'libs/modernizr-1.7.min.js'
+javascript 'javascripts/libs/jquery-1.6.2.js', :to => 'libs/jquery-1.6.2.js'
+javascript 'javascripts/libs/jquery-1.6.2.min.js', :to => 'libs/jquery-1.6.2.min.js'
+javascript 'javascripts/libs/modernizr-2.0.6.min.js', :to => 'libs/modernizr-2.0.6.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
 javascript 'javascripts/script.js', :to => 'script.js'
 # placeholder file for empty "mylibs" folder
@@ -41,7 +39,10 @@ file 'files/build/config/default.properties', :to => 'build/config/default.prope
 file 'files/build/config/project.properties', :to => 'build/config/project.properties'
 # build tools
 file 'files/build/tools/ant-contrib-1.0b3.jar', :to => 'build/tools/ant-contrib-1.0b3.jar'
-file 'files/build/tools/htmlcompressor-1.1.jar', :to => 'build/tools/htmlcompressor-1.1.jar'
+file 'files/build/tools/csslint-rhino.js', :to => 'build/tools/csslint-rhino.js'
+file 'files/build/tools/fulljshint.js', :to => 'build/tools/fulljshint.js'
+file 'files/build/tools/fulljslint.js', :to => 'build/tools/fulljslint.js'
+file 'files/build/tools/htmlcompressor-1.4.3.jar', :to => 'build/tools/htmlcompressor-1.4.3.jar'
 file 'files/build/tools/jpegtran.exe', :to => 'build/tools/jpegtran.exe'
 file 'files/build/tools/yuicompressor-2.4.5.jar', :to => 'build/tools/yuicompressor-2.4.5.jar'
 file 'files/build/tools/optipng-0.6.4-exe/LICENSE.txt', :to => 'build/tools/optipng-0.6.4-exe/LICENSE.txt'
