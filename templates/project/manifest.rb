@@ -24,6 +24,7 @@ html 'files/apple-touch-icon-114x114-precomposed.png', :to => 'apple-touch-icon-
 html 'files/apple-touch-icon-precomposed.png', :to => 'apple-touch-icon-precomposed.png'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
+file 'files/gitattributes.txt', :to => '.gitattributes'
 file 'files/gitignore.txt', :to => '.gitignore'
 # placeholder file for empty "img" folder
 image 'files/gitignore_placeholder.txt', :to => '.gitignore'
@@ -39,6 +40,7 @@ file 'files/build/config/default.properties', :to => 'build/config/default.prope
 file 'files/build/config/project.properties', :to => 'build/config/project.properties'
 # build tools
 file 'files/build/tools/ant-contrib-1.0b3.jar', :to => 'build/tools/ant-contrib-1.0b3.jar'
+file 'files/build/tools/closure-compiler-v1346.jar', :to => 'build/tools/closure-compiler-v1346.jar'
 file 'files/build/tools/csslint-rhino.js', :to => 'build/tools/csslint-rhino.js'
 file 'files/build/tools/fulljshint.js', :to => 'build/tools/fulljshint.js'
 file 'files/build/tools/fulljslint.js', :to => 'build/tools/fulljslint.js'

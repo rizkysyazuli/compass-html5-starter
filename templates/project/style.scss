@@ -4,24 +4,23 @@
 // Then we'll import the compass extension
 @import "html5-boilerplate";
 
-/* ==|== normalize ==========================================================
- * 
+/*
  * HTML5 ✰ Boilerplate
  *
- * What follows is the result of much research on cross-browser styling. 
+ * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  *
  * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
  */
 
 @include html5-boilerplate-normalize;
 
 
-
 /* ==|== primary styles =====================================================
-   
-   Author: 
+   Author:
    ========================================================================== */
 
 
@@ -36,15 +35,6 @@
 
 
 
-
-
-
-/* ==|== non-semantic helper classes ========================================
-   
-   Please define your styles before this section.
-   ========================================================================== */
-
-@include html5-boilerplate-helpers;
 
 
 
@@ -63,6 +53,15 @@
   /* Style adjustments for viewports 768px and over go here */
 
 }
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   
+   Please define your styles before this section.
+   ========================================================================== */
+
+@include html5-boilerplate-helpers;
 
 
 
