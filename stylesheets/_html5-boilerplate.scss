@@ -3,11 +3,3 @@
 @import "html5-boilerplate/normalize";
 @import "html5-boilerplate/helpers";
 @import "html5-boilerplate/print";
-
-@mixin html5-boilerplate {
-  @include html5-boilerplate-reset;
-  @include html5-boilerplate-fonts;
-  @include html5-boilerplate-styles;
-  @include html5-boilerplate-helpers;
-  @include html5-boilerplate-print;
-}

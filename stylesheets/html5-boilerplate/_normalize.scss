@@ -1,7 +1,7 @@
 $font-family: unquote('sans-serif') !default;
-$font-size: 13px !default;
-$line-height: 1.231 !default;
-$font-color: #444 !default;
+$font-size: 1em !default;
+$line-height: 1.4 !default;
+$font-color: #222 !default;
 $link-color: #00e !default;
 $link-hover-color: #06e !default;
 $link-visited-color: #551a8b !default;
@@ -52,7 +52,7 @@ $selected-background-color: #fe57a1 !default;
 
   a { color: $link-color; }
   a:visited { color: $link-visited-color; }
-  a:hover { color: link-hover-color; }
+  a:hover { color: $link-hover-color; }
   a:focus { outline: thin dotted; }
 
   /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -155,23 +155,17 @@ $selected-background-color: #fe57a1 !default;
 
   /*
    * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
-   * 2. Correct inner spacing displayed oddly in IE6/7
    */
 
-  button, input { line-height: normal; *overflow: visible; }
-
-  /*
-   * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
-   */
-
-  table button, table input { *overflow: auto; }
+  button, input { line-height: normal; }
 
   /*
    * 1. Display hand cursor for clickable form elements
    * 2. Allow styling of clickable form elements in iOS
+   * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
    */
 
-  button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+  button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
 
   /*
    * Consistent box sizing and appearance
