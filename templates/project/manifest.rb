@@ -1,4 +1,4 @@
-description "Compass extention for HTML5 Boilerplate located at http://html5boilerplate.com"
+description "Compass extension for HTML5 Boilerplate located at http://html5boilerplate.com"
 
 stylesheet 'style.scss'
 stylesheet 'partials/_boilerplate-defaults.scss'
@@ -30,7 +30,7 @@ file 'files/gitignore.txt', :to => '.gitignore'
 image 'files/gitignore_placeholder.txt', :to => '.gitignore'
 
 help %Q{
-This is a Compass extention for HTML5 Boilerplate by Paul Irish
+This is a Compass extension for HTML5 Boilerplate by Paul Irish
 (See full docs at: http://github.com/sporkd/compass-html5-boilerplate)
 
 Installation
