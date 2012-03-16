@@ -7,7 +7,7 @@ html 'index.html'
 
 javascript 'javascripts/libs/jquery-1.7.1.js', :to => 'libs/jquery-1.7.1.js'
 javascript 'javascripts/libs/jquery-1.7.1.min.js', :to => 'libs/jquery-1.7.1.min.js'
-javascript 'javascripts/libs/modernizr-2.0.6.min.js', :to => 'libs/modernizr-2.0.6.min.js'
+javascript 'javascripts/libs/modernizr-2.5.3.min.js', :to => 'libs/modernizr-2.5.3.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
 javascript 'javascripts/script.js', :to => 'script.js'
 # placeholder file for empty "mylibs" folder
@@ -28,30 +28,6 @@ file 'files/gitattributes.txt', :to => '.gitattributes'
 file 'files/gitignore.txt', :to => '.gitignore'
 # placeholder file for empty "img" folder
 image 'files/gitignore_placeholder.txt', :to => '.gitignore'
-
-# html5-boilerplate build script
-file 'files/build/build.xml', :to => 'build/build.xml'
-file 'files/build/buildinfo.properties', :to => 'build/buildinfo.properties'
-file 'files/build/createproject.sh', :to => 'build/createproject.sh'
-file 'files/build/project.xml', :to => 'build/project.xml'
-file 'files/build/runbuildscript.bat', :to => 'build/runbuildscript.bat'
-# build configs
-file 'files/build/config/buildinfo.properties', :to => 'build/config/buildinfo.properties'
-file 'files/build/config/default.properties', :to => 'build/config/default.properties'
-file 'files/build/config/manifest.appcache', :to => 'build/config/manifest.appcache'
-file 'files/build/config/project.properties', :to => 'build/config/project.properties'
-# build tools
-file 'files/build/tools/ant-contrib-1.0b3.jar', :to => 'build/tools/ant-contrib-1.0b3.jar'
-file 'files/build/tools/closure-compiler-v1346.jar', :to => 'build/tools/closure-compiler-v1346.jar'
-file 'files/build/tools/csslint-rhino.js', :to => 'build/tools/csslint-rhino.js'
-file 'files/build/tools/fulljshint.js', :to => 'build/tools/fulljshint.js'
-file 'files/build/tools/fulljslint.js', :to => 'build/tools/fulljslint.js'
-file 'files/build/tools/htmlcompressor-1.4.3.jar', :to => 'build/tools/htmlcompressor-1.4.3.jar'
-file 'files/build/tools/jpegtran.exe', :to => 'build/tools/jpegtran.exe'
-file 'files/build/tools/rhino.jar', :to => 'build/tools/rhino.jar'
-file 'files/build/tools/yuicompressor-2.4.5.jar', :to => 'build/tools/yuicompressor-2.4.5.jar'
-file 'files/build/tools/optipng-0.6.4-exe/LICENSE.txt', :to => 'build/tools/optipng-0.6.4-exe/LICENSE.txt'
-file 'files/build/tools/optipng-0.6.4-exe/optipng.exe', :to => 'build/tools/optipng-0.6.4-exe/optipng.exe'
 
 help %Q{
 This is a Compass extention for HTML5 Boilerplate by Paul Irish

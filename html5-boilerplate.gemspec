@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.2.4b"
-  s.date = "2011-05-04"
+  s.version = "0.2.8b"
+  s.date = "2012-03-16"
 
   s.name = "html5-starter"
   s.authors = ["Peter Gumeson", "Rizky Syazuli"]
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = false
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.8.6}
   s.add_dependency("compass", [">= 0.10.0"])
 end
