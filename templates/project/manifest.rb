@@ -5,8 +5,8 @@ stylesheet 'partials/_defaults.scss'
 
 html 'index.html'
 
-javascript 'javascripts/vendor/jquery-1.7.2.js', :to => 'vendor/jquery-1.7.1.js'
-javascript 'javascripts/vendor/jquery-1.7.2.min.js', :to => 'vendor/jquery-1.7.1.min.js'
+javascript 'javascripts/vendor/jquery-1.7.2.js', :to => 'vendor/jquery-1.7.2.js'
+javascript 'javascripts/vendor/jquery-1.7.2.min.js', :to => 'vendor/jquery-1.7.2.min.js'
 javascript 'javascripts/vendor/modernizr-2.5.3.min.js', :to => 'vendor/modernizr-2.5.3.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
 javascript 'javascripts/main.js', :to => 'main.js'
