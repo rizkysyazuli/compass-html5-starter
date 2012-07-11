@@ -1,17 +1,15 @@
 description "Compass extension for HTML5 Boilerplate located at http://html5boilerplate.com"
 
 stylesheet 'main.scss'
-stylesheet 'partials/_boilerplate-defaults.scss'
+stylesheet 'partials/_defaults.scss'
 
 html 'index.html'
 
-javascript 'javascripts/libs/jquery-1.7.2.js', :to => 'libs/jquery-1.7.1.js'
-javascript 'javascripts/libs/jquery-1.7.2.min.js', :to => 'libs/jquery-1.7.1.min.js'
-javascript 'javascripts/libs/modernizr-2.5.3.min.js', :to => 'libs/modernizr-2.5.3.min.js'
+javascript 'javascripts/vendor/jquery-1.7.2.js', :to => 'vendor/jquery-1.7.1.js'
+javascript 'javascripts/vendor/jquery-1.7.2.min.js', :to => 'vendor/jquery-1.7.1.min.js'
+javascript 'javascripts/vendor/modernizr-2.5.3.min.js', :to => 'vendor/modernizr-2.5.3.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
 javascript 'javascripts/main.js', :to => 'main.js'
-# placeholder file for empty "mylibs" folder
-javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
 
 html 'files/404.html', :to => '404.html'
 html 'files/htaccess', :to => '.htaccess'
@@ -36,7 +34,7 @@ This is a Compass extension for HTML5 Boilerplate by Paul Irish
 
 Installation
 ========================
-$ gem install html5-boilerplate
+$ gem install html5-starter
 $ compass create my_project -r html5-starter -u html5-starter --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
 
 }

@@ -1,8 +1,8 @@
 // First, set some default constants
-@import "partials/boilerplate-defaults";
+@import "partials/defaults";
 
 // Then we'll import the compass extension
-@import "html5-boilerplate";
+@import "html5-starter";
 
 /*
  * HTML5 ✰ Boilerplate
@@ -16,7 +16,7 @@
  * ==|== normalize ==========================================================
  */
 
-@include html5-boilerplate-normalize;
+@include html5-starter-normalize;
 
 
 /* ==|== primary styles =====================================================
@@ -55,7 +55,7 @@
    Please define your styles before this section.
    ========================================================================== */
 
-@include html5-boilerplate-helpers;
+@include html5-starter-helpers;
 
 
 
@@ -64,4 +64,4 @@
    Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@include html5-boilerplate-print;
+@include html5-starter-print;
