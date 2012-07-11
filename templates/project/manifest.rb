@@ -9,7 +9,7 @@ javascript 'javascripts/libs/jquery-1.7.2.js', :to => 'libs/jquery-1.7.1.js'
 javascript 'javascripts/libs/jquery-1.7.2.min.js', :to => 'libs/jquery-1.7.1.min.js'
 javascript 'javascripts/libs/modernizr-2.5.3.min.js', :to => 'libs/modernizr-2.5.3.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
-javascript 'javascripts/main.js', :to => 'script.js'
+javascript 'javascripts/main.js', :to => 'main.js'
 # placeholder file for empty "mylibs" folder
 javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
 
@@ -37,7 +37,7 @@ This is a Compass extension for HTML5 Boilerplate by Paul Irish
 Installation
 ========================
 $ gem install html5-boilerplate
-$ compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
+$ compass create my_project -r html5-starter -u html5-starter --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
 
 }
 

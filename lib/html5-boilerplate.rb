@@ -1,1 +1,1 @@
-Compass::Frameworks.register("html5-boilerplate", :path => "#{File.dirname(__FILE__)}/..")
+Compass::Frameworks.register("html5-starter", :path => "#{File.dirname(__FILE__)}/..")
