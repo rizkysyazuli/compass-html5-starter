@@ -1,12 +1,13 @@
-$font-family: unquote('sans-serif') !default;
-$font-size: 1em !default;
 $line-height: 1.4 !default;
+$font-family: sans-serif !default;
+$font-size: 1em !default;
 $font-color: #222 !default;
 $link-color: #00e !default;
 $link-hover-color: #06e !default;
 $link-visited-color: #551a8b !default;
 $selected-font-color: #fff !default;
 $selected-background-color: #fe57a1 !default;
+$invalid-background-color: #f0dddd !default;
 
 
 @mixin html5-boilerplate-normalize {
@@ -195,7 +196,7 @@ $selected-background-color: #fe57a1 !default;
 
   /* Colors for form validity */
   input:valid, textarea:valid {  }
-  input:invalid, textarea:invalid { background-color: #f0dddd; }
+  input:invalid, textarea:invalid { background-color: $invalid-background-color; }
 
 
   /* =============================================================================
