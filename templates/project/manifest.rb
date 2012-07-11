@@ -35,7 +35,7 @@ This is a Compass extension for HTML5 Boilerplate by Paul Irish
 Installation
 ========================
 $ gem install html5-starter
-$ compass create my_project -r html5-starter -u html5-starter --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
+$ compass create my_project -r html5-starter -u html5-starter --javascripts-dir js --css-dir css --images-dir img --sass-dir sass
 
 }
 
