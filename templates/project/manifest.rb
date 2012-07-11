@@ -1,15 +1,15 @@
 description "Compass extension for HTML5 Boilerplate located at http://html5boilerplate.com"
 
-stylesheet 'style.scss'
+stylesheet 'main.scss'
 stylesheet 'partials/_boilerplate-defaults.scss'
 
 html 'index.html'
 
-javascript 'javascripts/libs/jquery-1.7.1.js', :to => 'libs/jquery-1.7.1.js'
-javascript 'javascripts/libs/jquery-1.7.1.min.js', :to => 'libs/jquery-1.7.1.min.js'
+javascript 'javascripts/libs/jquery-1.7.2.js', :to => 'libs/jquery-1.7.1.js'
+javascript 'javascripts/libs/jquery-1.7.2.min.js', :to => 'libs/jquery-1.7.1.min.js'
 javascript 'javascripts/libs/modernizr-2.5.3.min.js', :to => 'libs/modernizr-2.5.3.min.js'
 javascript 'javascripts/plugins.js', :to => 'plugins.js'
-javascript 'javascripts/script.js', :to => 'script.js'
+javascript 'javascripts/main.js', :to => 'script.js'
 # placeholder file for empty "mylibs" folder
 javascript 'files/gitignore_placeholder.txt', :to => 'mylibs/.gitignore'
 
@@ -21,6 +21,7 @@ file 'files/humans.txt', :to => 'humans.txt'
 html 'files/apple-touch-icon-57x57-precomposed.png', :to => 'apple-touch-icon-57x57-precomposed.png'
 html 'files/apple-touch-icon-72x72-precomposed.png', :to => 'apple-touch-icon-72x72-precomposed.png'
 html 'files/apple-touch-icon-114x114-precomposed.png', :to => 'apple-touch-icon-114x114-precomposed.png'
+html 'files/apple-touch-icon-144x144-precomposed.png', :to => 'apple-touch-icon-144x144-precomposed.png'
 html 'files/apple-touch-icon-precomposed.png', :to => 'apple-touch-icon-precomposed.png'
 html 'files/apple-touch-icon.png', :to => 'apple-touch-icon.png'
 html 'files/favicon.ico', :to => 'favicon.ico'
