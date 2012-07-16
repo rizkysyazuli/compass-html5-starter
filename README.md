@@ -16,7 +16,7 @@ Installation
 Starting a project
 ------------------
 
-    compass create my_project -r html5-boilerplate -u html5-boilerplate --javascripts-dir assets/js --css-dir assets/css --images-dir assets/img --sass-dir assets/sass
+    compass create my_project -r html5-starter -u html5-starter --javascripts-dir js --css-dir css --images-dir img --sass-dir sass
 
 The `--javascripts-dir`, `--css-dir`, `--images-dir` and `--sass-dir` flags are required to keep consistent with the original HTML5 Starter project layout. If you omit them, be sure to edit your javascript and style tags accordingly in `index.html`.
 
